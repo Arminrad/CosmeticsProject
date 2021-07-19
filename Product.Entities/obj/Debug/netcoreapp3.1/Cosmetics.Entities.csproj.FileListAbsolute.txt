@@ -1,0 +1,9 @@
+D:\DocumentBootCamp\CosmeticsProject\CosmeticsProject\Product.Entities\bin\Debug\netcoreapp3.1\Cosmetics.Entities.deps.json
+D:\DocumentBootCamp\CosmeticsProject\CosmeticsProject\Product.Entities\bin\Debug\netcoreapp3.1\Cosmetics.Entities.dll
+D:\DocumentBootCamp\CosmeticsProject\CosmeticsProject\Product.Entities\obj\Debug\netcoreapp3.1\Cosmetics.Entities.csprojAssemblyReference.cache
+D:\DocumentBootCamp\CosmeticsProject\CosmeticsProject\Product.Entities\obj\Debug\netcoreapp3.1\Cosmetics.Entities.AssemblyInfoInputs.cache
+D:\DocumentBootCamp\CosmeticsProject\CosmeticsProject\Product.Entities\obj\Debug\netcoreapp3.1\Cosmetics.Entities.AssemblyInfo.cs
+D:\DocumentBootCamp\CosmeticsProject\CosmeticsProject\Product.Entities\bin\Debug\netcoreapp3.1\Cosmetics.Entities.pdb
+D:\DocumentBootCamp\CosmeticsProject\CosmeticsProject\Product.Entities\obj\Debug\netcoreapp3.1\Cosmetics.Entities.csproj.CoreCompileInputs.cache
+D:\DocumentBootCamp\CosmeticsProject\CosmeticsProject\Product.Entities\obj\Debug\netcoreapp3.1\Cosmetics.Entities.dll
+D:\DocumentBootCamp\CosmeticsProject\CosmeticsProject\Product.Entities\obj\Debug\netcoreapp3.1\Cosmetics.Entities.pdb
