@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\AMOO VAHID\\Desktop\\CosmeticsProject\\Cosmetics.Application.Services\\Cosmetics.Application.Services.csproj": {}
+    "D:\\DocumentBootCamp\\CosmeticsProject\\Repository\\Cosmetics.Application.Services\\Cosmetics.Application.Services.csproj": {}
   },
   "projects": {
-    "C:\\Users\\AMOO VAHID\\Desktop\\CosmeticsProject\\Cosmetics.Application.Services\\Cosmetics.Application.Services.csproj": {
+    "D:\\DocumentBootCamp\\CosmeticsProject\\Repository\\Cosmetics.Application.Services\\Cosmetics.Application.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\AMOO VAHID\\Desktop\\CosmeticsProject\\Cosmetics.Application.Services\\Cosmetics.Application.Services.csproj",
+        "projectUniqueName": "D:\\DocumentBootCamp\\CosmeticsProject\\Repository\\Cosmetics.Application.Services\\Cosmetics.Application.Services.csproj",
         "projectName": "Cosmetics.Application.Services",
-        "projectPath": "C:\\Users\\AMOO VAHID\\Desktop\\CosmeticsProject\\Cosmetics.Application.Services\\Cosmetics.Application.Services.csproj",
-        "packagesPath": "C:\\Users\\AMOO VAHID\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\AMOO VAHID\\Desktop\\CosmeticsProject\\Cosmetics.Application.Services\\obj\\",
+        "projectPath": "D:\\DocumentBootCamp\\CosmeticsProject\\Repository\\Cosmetics.Application.Services\\Cosmetics.Application.Services.csproj",
+        "packagesPath": "C:\\Users\\liyah\\.nuget\\packages\\",
+        "outputPath": "D:\\DocumentBootCamp\\CosmeticsProject\\Repository\\Cosmetics.Application.Services\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\AMOO VAHID\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\liyah\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,10 +29,9 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\AMOO VAHID\\Desktop\\CosmeticsProject\\Product.Entities\\Cosmetics.Entities.csproj": {
-                "projectPath": "C:\\Users\\AMOO VAHID\\Desktop\\CosmeticsProject\\Product.Entities\\Cosmetics.Entities.csproj"
+              "D:\\DocumentBootCamp\\CosmeticsProject\\Repository\\Product.Entities\\Cosmetics.Entities.csproj": {
+                "projectPath": "D:\\DocumentBootCamp\\CosmeticsProject\\Repository\\Product.Entities\\Cosmetics.Entities.csproj"
               }
             }
           }
@@ -42,7 +44,6 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "AutoMapper": {
               "target": "Package",
@@ -72,21 +73,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.205\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\AMOO VAHID\\Desktop\\CosmeticsProject\\Product.Entities\\Cosmetics.Entities.csproj": {
+    "D:\\DocumentBootCamp\\CosmeticsProject\\Repository\\Product.Entities\\Cosmetics.Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\AMOO VAHID\\Desktop\\CosmeticsProject\\Product.Entities\\Cosmetics.Entities.csproj",
+        "projectUniqueName": "D:\\DocumentBootCamp\\CosmeticsProject\\Repository\\Product.Entities\\Cosmetics.Entities.csproj",
         "projectName": "Cosmetics.Entities",
-        "projectPath": "C:\\Users\\AMOO VAHID\\Desktop\\CosmeticsProject\\Product.Entities\\Cosmetics.Entities.csproj",
-        "packagesPath": "C:\\Users\\AMOO VAHID\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\AMOO VAHID\\Desktop\\CosmeticsProject\\Product.Entities\\obj\\",
+        "projectPath": "D:\\DocumentBootCamp\\CosmeticsProject\\Repository\\Product.Entities\\Cosmetics.Entities.csproj",
+        "packagesPath": "C:\\Users\\liyah\\.nuget\\packages\\",
+        "outputPath": "D:\\DocumentBootCamp\\CosmeticsProject\\Repository\\Product.Entities\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\AMOO VAHID\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\liyah\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -98,7 +102,6 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -110,7 +113,6 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -132,7 +134,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.205\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

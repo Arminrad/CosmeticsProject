@@ -7,6 +7,7 @@ using Cosmetics.Application.Services.Dto.Output;
 using Cosmetics.Application.Services.Mapper;
 using Cosmetics.EF.Persistance.CosmeticsDatabase;
 using Cosmetics.EF.Persistance.Repository;
+using Cosmetics.Entities;
 using Cosmetics.Entities.IRepositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -33,6 +34,7 @@ namespace CosmeticsApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddScoped(typeof(IUnitOfWork), typeof(UnitOfWork));
             services.AddScoped(typeof(ICategoryService), typeof(CategoryService));
             services.AddScoped(typeof(ICommentService), typeof(CommentService));
             services.AddScoped(typeof(IProductService), typeof(ProductService));

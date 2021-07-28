@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - CosmeticsRazor</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/Template/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="~/Template/css/ionicons.min.css" />
+    <link rel="stylesheet" href="~/Template/css/simple-line-icons.css" />
+    <link rel="stylesheet" href="~/Template/css/plugins/jquery-ui.min.css">
+    <link rel="stylesheet" href="~/Template/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/Template/css/plugins/plugins.css" />
+    <link rel="stylesheet" href="~/Template/css/style.min.css" />
+    <link rel="stylesheet" href="~/Template/css/style.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="~/Template/images/logo/RojaLogo.png" />
+
+</head>
+<body dir="rtl">
+    @Html.Partial("/Pages/Partial/MenuPartial.cshtml");
+
+    @RenderBody()
+
+    @Html.Partial("/Pages/Partial/FooterPartial.cshtml");
+  
+    <script src="~/Template/js/vendor/jquery-3.5.1.min.js"></script>
+    <script src="~/Template/js/vendor/modernizr-3.7.1.min.js"></script>
+    <script src="~/Template/js/popper.min.js"></script>
+    <script src="~/Template/js/plugins/jquery-ui.min.js"></script>
+    <script src="~/Template/js/bootstrap.min.js"></script>
+    <script src="~/Template/js/plugins/plugins.js"></script>
+    <script src="~/Template/js/plugins/ajax-contact.js"></script>
+    <script src="~/Template/js/main.js"></script>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

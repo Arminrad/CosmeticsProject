@@ -11,7 +11,7 @@ namespace Cosmetics.Application.Services.Mapper
     {
         public CategoryInputMapper()
         {
-            CreateMap<Category, CategoryInputDto>();
+            CreateMap<CategoryInputDto,Category>();
         }
        
     }

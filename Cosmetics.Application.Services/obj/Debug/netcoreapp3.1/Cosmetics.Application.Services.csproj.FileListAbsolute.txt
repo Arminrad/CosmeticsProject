@@ -10,3 +10,15 @@ D:\DocumentBootCamp\CosmeticsProject\CosmeticsProject\Cosmetics.Application.Serv
 D:\DocumentBootCamp\CosmeticsProject\CosmeticsProject\Cosmetics.Application.Services\obj\Debug\netcoreapp3.1\Cosmetics.Application.Services.csproj.CopyComplete
 D:\DocumentBootCamp\CosmeticsProject\CosmeticsProject\Cosmetics.Application.Services\obj\Debug\netcoreapp3.1\Cosmetics.Application.Services.dll
 D:\DocumentBootCamp\CosmeticsProject\CosmeticsProject\Cosmetics.Application.Services\obj\Debug\netcoreapp3.1\Cosmetics.Application.Services.pdb
+D:\DocumentBootCamp\CosmeticsProject\Repository\Cosmetics.Application.Services\bin\Debug\netcoreapp3.1\Cosmetics.Application.Services.deps.json
+D:\DocumentBootCamp\CosmeticsProject\Repository\Cosmetics.Application.Services\bin\Debug\netcoreapp3.1\Cosmetics.Application.Services.dll
+D:\DocumentBootCamp\CosmeticsProject\Repository\Cosmetics.Application.Services\bin\Debug\netcoreapp3.1\Cosmetics.Application.Services.pdb
+D:\DocumentBootCamp\CosmeticsProject\Repository\Cosmetics.Application.Services\bin\Debug\netcoreapp3.1\Cosmetics.Entities.dll
+D:\DocumentBootCamp\CosmeticsProject\Repository\Cosmetics.Application.Services\bin\Debug\netcoreapp3.1\Cosmetics.Entities.pdb
+D:\DocumentBootCamp\CosmeticsProject\Repository\Cosmetics.Application.Services\obj\Debug\netcoreapp3.1\Cosmetics.Application.Services.csprojAssemblyReference.cache
+D:\DocumentBootCamp\CosmeticsProject\Repository\Cosmetics.Application.Services\obj\Debug\netcoreapp3.1\Cosmetics.Application.Services.csproj.CoreCompileInputs.cache
+D:\DocumentBootCamp\CosmeticsProject\Repository\Cosmetics.Application.Services\obj\Debug\netcoreapp3.1\Cosmetics.Application.Services.AssemblyInfoInputs.cache
+D:\DocumentBootCamp\CosmeticsProject\Repository\Cosmetics.Application.Services\obj\Debug\netcoreapp3.1\Cosmetics.Application.Services.AssemblyInfo.cs
+D:\DocumentBootCamp\CosmeticsProject\Repository\Cosmetics.Application.Services\obj\Debug\netcoreapp3.1\Cosmetics.Application.Services.csproj.CopyComplete
+D:\DocumentBootCamp\CosmeticsProject\Repository\Cosmetics.Application.Services\obj\Debug\netcoreapp3.1\Cosmetics.Application.Services.dll
+D:\DocumentBootCamp\CosmeticsProject\Repository\Cosmetics.Application.Services\obj\Debug\netcoreapp3.1\Cosmetics.Application.Services.pdb

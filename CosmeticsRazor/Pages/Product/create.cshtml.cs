@@ -23,9 +23,10 @@ namespace CosmeticsRazor.Pages.Product
         {
             ProductInput = new ProductInputDto();
         }
-        public Task Onpost()
+        public async Task OnPost()
         {
-            product.Insert(ProductInput);
+           await product.Insert(ProductInput);
         }
+    
     }
 }
