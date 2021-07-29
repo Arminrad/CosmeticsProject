@@ -162,3 +162,8 @@ D:\DocumentBootCamp\CosmeticsProject\Repository\CosmeticsRezor\obj\Debug\netcore
 D:\DocumentBootCamp\CosmeticsProject\Repository\CosmeticsRezor\obj\Debug\netcoreapp3.1\Razor\Pages\Product\Update.cshtml.g.cs
 D:\DocumentBootCamp\CosmeticsProject\Repository\CosmeticsRezor\obj\Debug\netcoreapp3.1\Razor\Pages\Partial\MenuPartial.cshtml.g.cs
 D:\DocumentBootCamp\CosmeticsProject\Repository\CosmeticsRezor\obj\Debug\netcoreapp3.1\Razor\Pages\Partial\FooterPartial.cshtml.g.cs
+D:\DocumentBootCamp\CosmeticsProject\Repository\CosmeticsRezor\obj\Debug\netcoreapp3.1\Razor\Pages\Category\Create.cshtml.g.cs
+D:\DocumentBootCamp\CosmeticsProject\Repository\CosmeticsRezor\obj\Debug\netcoreapp3.1\Razor\Pages\Category\Delete.cshtml.g.cs
+D:\DocumentBootCamp\CosmeticsProject\Repository\CosmeticsRezor\obj\Debug\netcoreapp3.1\Razor\Pages\Category\Get.cshtml.g.cs
+D:\DocumentBootCamp\CosmeticsProject\Repository\CosmeticsRezor\obj\Debug\netcoreapp3.1\Razor\Pages\Category\GetAll.cshtml.g.cs
+D:\DocumentBootCamp\CosmeticsProject\Repository\CosmeticsRezor\obj\Debug\netcoreapp3.1\Razor\Pages\Category\Update.cshtml.g.cs

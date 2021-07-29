@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Cosmetics.Application.Services.CosmeticsService;
 using Cosmetics.Application.Services.Dto.Input;
+using Cosmetics.Application.Services.Dto.Update;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
@@ -23,9 +24,10 @@ namespace CosmeticsRezor.Pages.Product
         {
             productInput = new ProductInputDto();
         }
-        public async Task update(ProductInputDto productInputDto)
+        public async Task update(ProductUpdateDto productUpdateDto)
         {
-            await productService.Update(productInput);
+            await productService.Update(productUpdateDto);
         }
     }
 }
+
