@@ -12,7 +12,7 @@ namespace Cosmetics.Application.Services.Mapper
     {
         public CategoryOutputMapper()
         {
-            CreateMap<CategoryOutputDto,Category>();
+            CreateMap<Category,CategoryOutputDto>();
         }
     }
 }

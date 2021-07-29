@@ -52,7 +52,10 @@ namespace Cosmetics.Application.Services.CosmeticsService
 
         public async Task Update(CategoryUpdateDto categoryUpdateDto)
         {
-            var input = new Category() { Id =categoryUpdateDto.Id, CategoryName = categoryUpdateDto.CategoryName };
+            var input = new Category() 
+            { 
+            Id =categoryUpdateDto.Id, CategoryName = categoryUpdateDto.CategoryName 
+            };
             await repositoryCategory.UpdateAsync(input);
             await unitOfWork.Save();
 
