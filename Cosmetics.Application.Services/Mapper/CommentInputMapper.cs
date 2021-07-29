@@ -11,8 +11,10 @@ namespace Cosmetics.Application.Services.Mapper
     {
         public CommentInputMapper()
         {
-            CreateMap<Comment, CommentInputDto>().ForMember(x => x.Name, o => o.MapFrom(x => x.User.Name))
-                                               .ForMember(x => x.Family, o => o.MapFrom(x => x.User.Family));
+            //CreateMap<CommentInputDto, Comment>().ForMember(x => x.User.Name, o => o.MapFrom(y => y.Name))
+            //                                 .ForMember(x => x.User.Family, o => o.MapFrom(y => y.Family))
+            //                                  .ForMember(x => x.Product.Id, o => o.MapFrom(y => y.ProductId));
+
         }
     }
 }

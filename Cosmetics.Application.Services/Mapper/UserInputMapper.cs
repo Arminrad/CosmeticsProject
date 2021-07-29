@@ -11,7 +11,7 @@ namespace Cosmetics.Application.Services.Mapper
     {
         public UserInputMapper()
         {
-            CreateMap<User, UserInputDto>();
+            CreateMap<UserInputDto,User>();
         }
     }
 }

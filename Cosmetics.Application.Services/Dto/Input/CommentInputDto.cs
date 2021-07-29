@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Cosmetics.Entities;
 
 namespace Cosmetics.Application.Services.Dto.Input
 {
@@ -10,5 +11,8 @@ namespace Cosmetics.Application.Services.Dto.Input
         public string Family { get; set; }
         public String CommentText { get; set; }
         public DateTime RegisterDate { get; set; }
+        public int UserId { get; set; }
+        public int ProductId { get; set; }
+      
     }
 }

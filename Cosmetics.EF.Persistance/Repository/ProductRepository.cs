@@ -60,8 +60,14 @@ namespace Cosmetics.EF.Persistance.Repository
             {
                 throw new KeyNotFoundException();
             }
-            dBContext.Update(resultProduct);
-            //resultProduct = product;
+            resultProduct.Name = product.Name;
+            resultProduct.Price = product.Price;
+            resultProduct.Brand = product.Brand;
+            resultProduct.Weight = product.Weight;
+            resultProduct.Count = product.Count;
+            resultProduct.Country = product.Country;
+            resultProduct.CategoryId = product.CategoryId;
+            resultProduct.Comment = product.Comment;
 
         }
     }

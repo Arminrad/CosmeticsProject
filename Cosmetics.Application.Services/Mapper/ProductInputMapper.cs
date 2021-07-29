@@ -12,7 +12,7 @@ namespace Cosmetics.Application.Services.Mapper
     {
         public ProductInputMapper()
         {
-            CreateMap<Product, ProductInputDto>();
+            CreateMap<ProductInputDto,Product>();
         }
 
     }
