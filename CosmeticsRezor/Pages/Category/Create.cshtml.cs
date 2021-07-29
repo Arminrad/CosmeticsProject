@@ -26,6 +26,7 @@ namespace CosmeticsRezor.Pages.Category
         public async Task insert()
         {
             await categoryService.Insert(categoryInputDto);
+
         }
     }
 }
