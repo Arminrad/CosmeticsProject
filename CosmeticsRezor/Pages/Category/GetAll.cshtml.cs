@@ -20,10 +20,11 @@ namespace CosmeticsRezor.Pages.Category
         }
 
         [BindProperty]
-        public CategoryOutputDto  CategoryOutput { get; set; }
+        public List<CategoryOutputDto>  CategoryOutput { get; set; }
         public async Task OnGet()
         {
-            await categoryService.GetAll();
+            CategoryOutput = new List<CategoryOutputDto>();
+            CategoryOutput = await categoryService.GetAll();
         }
     }
 }

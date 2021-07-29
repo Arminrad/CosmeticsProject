@@ -1,16 +1,23 @@
 ﻿@page
 @model CosmeticsRezor.Pages.Category.GetAllModel
 @{
-    Layout = null;
+    Layout = "/Pages/Shared/_Layout.cshtml";
 }
-
 <!DOCTYPE html>
-
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>GetAll</title>
 </head>
 <body>
+ 
+   
+        @foreach (var item in Model.CategoryOutput)
+        {
+         
+          <input type="text" asp-for="@item.CategoryName" />
+        }
+ 
+  
 </body>
 </html>

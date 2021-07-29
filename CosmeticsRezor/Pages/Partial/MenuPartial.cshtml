@@ -1,4 +1,9 @@
-﻿<header>
+﻿@model CosmeticsRezor.Pages.Partial.MenuPartialModel
+@{
+    Layout = "/Pages/Shared/_Layout.cshtml";
+}
+<header>
+
     <div id="offcanvas-mobile-menu" class="offcanvas theme1 offcanvas-mobile-menu">
         <div class="inner">
             <button class="offcanvas-close" dir="rtl">×</button>
@@ -11,7 +16,15 @@
                         <a href="#"><span class="menu-text">دسته بندی محصولات</span></a>
                         <ul class="offcanvas-submenu">
                             <li>
-                                <a href="#"><span class="menu-text">عطر</span></a>
+                                <a href="#">
+                                    <span class="menu-text">
+                                        @foreach (var item in Model.CategoryOutput)
+                                        {
+                                            <p>@item.CategoryName</p>
+                                        }
+
+                                    </span>
+                                </a>
                                 <ul class="offcanvas-submenu">
                                     <li>
                                         <a href="shop-grid-3-column.html" class="text">عطر مردانه</a>

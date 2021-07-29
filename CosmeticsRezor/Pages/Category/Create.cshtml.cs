@@ -6,6 +6,7 @@ using Cosmetics.Application.Services.CosmeticsService;
 using Cosmetics.Application.Services.Dto.Input;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.CodeAnalysis.CSharp.Syntax;
 
 namespace CosmeticsRezor.Pages.Category
 {
@@ -28,5 +29,6 @@ namespace CosmeticsRezor.Pages.Category
             await categoryService.Insert(categoryInputDto);
 
         }
+        
     }
 }
