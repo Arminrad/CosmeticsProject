@@ -40,14 +40,14 @@
 .text{
   font-size: 15px !important;
 }
-.tite-child-category
+ .tite-child-category
 {
   font-family:'koodak';
-  font-size: .8rem;
   text-align: center;
   color: rgb(121, 121, 121);
 
 }
+
 a{
   font-size: 18px !important;
 }

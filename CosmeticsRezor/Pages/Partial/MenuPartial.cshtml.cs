@@ -11,18 +11,5 @@ namespace CosmeticsRezor.Pages.Partial
 {
     public class MenuPartialModel : PageModel
     {
-        private readonly ICategoryService categoryService;
-
-        public MenuPartialModel(ICategoryService categoryService)
-        {
-            this.categoryService = categoryService;
-        }
-        [BindProperty]
-        public List<CategoryOutputDto> CategoryOutput { get; set; }
-        public async Task OnGet()
-        {
-            CategoryOutput = new List<CategoryOutputDto>();
-            CategoryOutput = await categoryService.GetAll();
-        }
     }
 }
