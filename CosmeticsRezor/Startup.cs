@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Cosmetics.Application.Services.CosmeticsService;
 using Cosmetics.Application.Services.Dto.Output;
 using Cosmetics.Application.Services.Mapper;
+using Cosmetics.Application.Services.SearchService;
 using Cosmetics.EF.Persistance.CosmeticsDatabase;
 using Cosmetics.EF.Persistance.Repository;
 using Cosmetics.Entities;
@@ -37,21 +38,24 @@ namespace CosmeticsRezor
             services.AddScoped(typeof(ICommentService), typeof(CommentService));
             services.AddScoped(typeof(IProductService), typeof(ProductService));
             services.AddScoped(typeof(IStoreService), typeof(StoreService));
+            services.AddScoped(typeof(IUserService), typeof(UserService));
             services.AddScoped(typeof(IRepositoryCategory), typeof(CategoryRepository));
             services.AddScoped(typeof(IRepositoryComment), typeof(CommentRepository));
             services.AddScoped(typeof(IRepositoryProduct), typeof(ProductRepository));
             services.AddScoped(typeof(IRepositoryStore), typeof(StoreRepository));
             services.AddScoped(typeof(IRepositoryUser), typeof(UserRepository));
+            services.AddScoped(typeof(IProductSearch), typeof(ProductSearch));
             services.AddAutoMapper(typeof(ProductInputMapper));
             services.AddAutoMapper(typeof(ProductOutputMapper));
             services.AddAutoMapper(typeof(CategoryInputMapper));
             services.AddAutoMapper(typeof(CategoryOutputDto));
             services.AddAutoMapper(typeof(StoreInputMapper));
-            services.AddAutoMapper(typeof(StoreOutputDto));
+            services.AddAutoMapper(typeof(StoreOutputMapper));
             services.AddAutoMapper(typeof(UserInputMapper));
-            services.AddAutoMapper(typeof(UserOutputDto));
+            services.AddAutoMapper(typeof(UserOutputMapper));
             services.AddAutoMapper(typeof(CommentInputMapper));
             services.AddAutoMapper(typeof(CommentOutputMapper));
+           
             services.AddDbContext<AppDBContext>
             (o => o.UseSqlServer(Configuration.GetConnectionString("CosmeticsDb")));
             services.AddControllers();

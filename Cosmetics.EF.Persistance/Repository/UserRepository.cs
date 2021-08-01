@@ -61,7 +61,10 @@ namespace Cosmetics.EF.Persistance.Repository
             {
                 throw new KeyNotFoundException();
             }
-            dBContext.Update(resultUser);
+            resultUser.Name = user.Name; 
+             resultUser.Family= user.Family;
+             resultUser.Password = user.Password;
+            resultUser.UserType = user.UserType  ;
         }
     }
 }

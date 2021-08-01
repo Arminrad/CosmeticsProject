@@ -16,5 +16,6 @@ namespace Cosmetics.Application.Services.CosmeticsService
         Task Update(CategoryUpdateDto categoryUpdateDto);
         ValueTask<CategoryOutputDto> Get(int id);
         Task<List<CategoryOutputDto>> GetAll();
+        
     }
 }

@@ -61,7 +61,9 @@ namespace Cosmetics.EF.Persistance.Repository
             {
                 throw new KeyNotFoundException();
             }
-            dBContext.Update(resultStore);
+            resultStore.Email = store.Email;
+            resultStore.StoreName = store.StoreName;
+            resultStore.Tell = store.Tell;
         }
     }
 }

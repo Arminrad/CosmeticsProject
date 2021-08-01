@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using AutoMapper;
 using Cosmetics.Application.Services.Dto.Input;
 using Cosmetics.Application.Services.Dto.Output;
+using Cosmetics.Application.Services.Dto.Update;
 using Cosmetics.Entities;
 using Cosmetics.Entities.IRepositories;
 
@@ -49,9 +50,16 @@ namespace Cosmetics.Application.Services.CosmeticsService
             await unitOfWork.Save();
         }
 
-        public async Task Update(CommentInputDto commentInputDto)
+      
+        public async Task Update(CommentUpdateDto CommentUpdateDto)
         {
-            var input = mapper.Map<Comment>(commentInputDto);
+            //var input = mapper.Map<Comment>(CommentUpdateDto);
+            var input = new Comment();
+            input.Id = CommentUpdateDto.Id;
+            input.CommentText = CommentUpdateDto.CommentText;
+            input.ProductId = CommentUpdateDto.ProductId;
+            input.UserId = CommentUpdateDto.UserId;
+           
             await repositoryUserComment.UpdateAsync(input);
             await unitOfWork.Save();
         }

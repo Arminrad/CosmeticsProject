@@ -4,6 +4,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Cosmetics.Application.Services.Dto.Input;
 using Cosmetics.Application.Services.Dto.Output;
+using Cosmetics.Application.Services.Dto.Update;
 using Cosmetics.Entities;
 
 namespace Cosmetics.Application.Services.CosmeticsService
@@ -12,7 +13,7 @@ namespace Cosmetics.Application.Services.CosmeticsService
     {
         Task Insert(StoreInputDto storeDto);
         Task Delete(int id);
-        Task Update(StoreInputDto storeInputDto);
+        Task Update(StoreUpdateDto storeUpdateDto);
         ValueTask<StoreOutputDto> Get(int id);
         Task<List<StoreOutputDto>> GetAll();
     }

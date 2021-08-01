@@ -16,3 +16,12 @@ D:\DocumentBootCamp\CosmeticsProject\Repository\Product.Entities\obj\Debug\netco
 D:\DocumentBootCamp\CosmeticsProject\Repository\Product.Entities\obj\Debug\netcoreapp3.1\Cosmetics.Entities.AssemblyInfo.cs
 D:\DocumentBootCamp\CosmeticsProject\Repository\Product.Entities\obj\Debug\netcoreapp3.1\Cosmetics.Entities.dll
 D:\DocumentBootCamp\CosmeticsProject\Repository\Product.Entities\obj\Debug\netcoreapp3.1\Cosmetics.Entities.pdb
+E:\bamdad\ArminRad\Product.Entities\bin\Debug\netcoreapp3.1\Cosmetics.Entities.deps.json
+E:\bamdad\ArminRad\Product.Entities\bin\Debug\netcoreapp3.1\Cosmetics.Entities.dll
+E:\bamdad\ArminRad\Product.Entities\bin\Debug\netcoreapp3.1\Cosmetics.Entities.pdb
+E:\bamdad\ArminRad\Product.Entities\obj\Debug\netcoreapp3.1\Cosmetics.Entities.csproj.AssemblyReference.cache
+E:\bamdad\ArminRad\Product.Entities\obj\Debug\netcoreapp3.1\Cosmetics.Entities.AssemblyInfoInputs.cache
+E:\bamdad\ArminRad\Product.Entities\obj\Debug\netcoreapp3.1\Cosmetics.Entities.AssemblyInfo.cs
+E:\bamdad\ArminRad\Product.Entities\obj\Debug\netcoreapp3.1\Cosmetics.Entities.csproj.CoreCompileInputs.cache
+E:\bamdad\ArminRad\Product.Entities\obj\Debug\netcoreapp3.1\Cosmetics.Entities.dll
+E:\bamdad\ArminRad\Product.Entities\obj\Debug\netcoreapp3.1\Cosmetics.Entities.pdb

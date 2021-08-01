@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Cosmetics.Application.Services.CosmeticsService;
 using Cosmetics.Application.Services.Dto.Input;
+using Cosmetics.Application.Services.Dto.Update;
 using Cosmetics.Entities;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -42,7 +43,7 @@ namespace CosmeticsApi.Controllers
         }
         [HttpPut]
 
-        public async Task<IActionResult> Update(StoreInputDto storeInputDto)
+        public async Task<IActionResult> Update(StoreUpdateDto storeInputDto)
         {
             await storeService.Update(storeInputDto);
             return Ok();

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Cosmetics.Application.Services.CosmeticsService;
 using Cosmetics.Application.Services.Dto.Input;
+using Cosmetics.Application.Services.Dto.Update;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -41,9 +42,9 @@ namespace CosmeticsApi.Controllers
         }
         [HttpPut]
 
-        public async Task<IActionResult> Update(CommentInputDto commentInputDto)
+        public async Task<IActionResult> Update(CommentUpdateDto commentUpdateDto)
         {
-            await CommentService.Update(commentInputDto);
+            await CommentService.Update(commentUpdateDto);
             return Ok();
         }
 

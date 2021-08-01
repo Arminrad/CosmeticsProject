@@ -4,6 +4,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Cosmetics.Application.Services.Dto.Input;
 using Cosmetics.Application.Services.Dto.Output;
+using Cosmetics.Application.Services.Dto.Update;
 using Cosmetics.Application.Services.Mapper;
 
 namespace Cosmetics.Application.Services.CosmeticsService
@@ -12,7 +13,7 @@ namespace Cosmetics.Application.Services.CosmeticsService
     {
         Task Insert(CommentInputDto  commentInputDto);
         Task Delete(int id);
-        Task Update(CommentInputDto commentInputDto);
+        Task Update(CommentUpdateDto CommentUpdateDto);
         ValueTask<CommentOutputDto> Get(int id);
         Task<List<CommentOutputDto>> GetAll();
     }

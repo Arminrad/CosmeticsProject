@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using AutoMapper;
 using Cosmetics.Application.Services.Dto.Input;
 using Cosmetics.Application.Services.Dto.Output;
+using Cosmetics.Application.Services.Dto.Update;
 using Cosmetics.Entities;
 using Cosmetics.Entities.IRepositories;
 
@@ -49,10 +50,18 @@ namespace Cosmetics.Application.Services.CosmeticsService
             await unitOfWork.Save();
         }
 
-        public async Task Update(StoreInputDto storeInputDto)
+       
+
+        public async Task Update(StoreUpdateDto storeUpdateDto)
         {
-            var input = mapper.Map<Store>(storeInputDto);
-            await repositoryStore.UpdateAsync(input);
+            var store = new Store()
+            {
+                Id = storeUpdateDto.Id,
+                StoreName = storeUpdateDto.StoreName,
+                Email = storeUpdateDto.Email,
+                Tell = storeUpdateDto.Tell
+            };
+            await repositoryStore.UpdateAsync(store);
             await unitOfWork.Save();
         }
     }

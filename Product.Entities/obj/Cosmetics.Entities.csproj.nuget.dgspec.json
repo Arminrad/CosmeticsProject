@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\DocumentBootCamp\\CosmeticsProject\\Repository\\Product.Entities\\Cosmetics.Entities.csproj": {}
+    "E:\\bamdad\\ArminRad\\Product.Entities\\Cosmetics.Entities.csproj": {}
   },
   "projects": {
-    "D:\\DocumentBootCamp\\CosmeticsProject\\Repository\\Product.Entities\\Cosmetics.Entities.csproj": {
+    "E:\\bamdad\\ArminRad\\Product.Entities\\Cosmetics.Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\DocumentBootCamp\\CosmeticsProject\\Repository\\Product.Entities\\Cosmetics.Entities.csproj",
+        "projectUniqueName": "E:\\bamdad\\ArminRad\\Product.Entities\\Cosmetics.Entities.csproj",
         "projectName": "Cosmetics.Entities",
-        "projectPath": "D:\\DocumentBootCamp\\CosmeticsProject\\Repository\\Product.Entities\\Cosmetics.Entities.csproj",
-        "packagesPath": "C:\\Users\\liyah\\.nuget\\packages\\",
-        "outputPath": "D:\\DocumentBootCamp\\CosmeticsProject\\Repository\\Product.Entities\\obj\\",
+        "projectPath": "E:\\bamdad\\ArminRad\\Product.Entities\\Cosmetics.Entities.csproj",
+        "packagesPath": "C:\\Users\\AMOO VAHID\\.nuget\\packages\\",
+        "outputPath": "E:\\bamdad\\ArminRad\\Product.Entities\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\liyah\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\AMOO VAHID\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -29,6 +26,7 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -40,6 +38,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -61,7 +60,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }
