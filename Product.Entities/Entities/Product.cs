@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Cosmetics.Entities.Entities;
 
 namespace Cosmetics.Entities
 {
@@ -18,5 +19,7 @@ namespace Cosmetics.Entities
         public Category Category{ get; set; }
         public List<StoreProduct> StoreProducts { get; set; }
         public List<Comment> UserComments { get; set; }
+        public SubCategoryDetails SubCategoryDetails { get; set; }
+        public int SubCategoryDetailsId { get; set; }
     }
 }

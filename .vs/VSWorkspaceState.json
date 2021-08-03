@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
     "",
+    "\\CosmeticsRazor",
+    "\\CosmeticsRezor",
     "\\Product.Entities"
   ],
+  "SelectedNode": "\\CosmeticsProject.sln",
   "PreviewInSolutionExplorer": false
 }
