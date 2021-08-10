@@ -47,6 +47,8 @@ namespace CosmeticsApi
             services.AddScoped(typeof(IRepositoryStore), typeof(StoreRepository));
             services.AddScoped(typeof(IRepositoryUser), typeof(UserRepository));
             services.AddScoped(typeof(IProductSearch), typeof(ProductSearch));
+            services.AddScoped(typeof(ISubCategoryService), typeof(SubCategoryService));
+            services.AddScoped(typeof(ISubCategoryDetailsService), typeof(SubCategoryDetailsService));
             services.AddAutoMapper(typeof(ProductInputMapper));
             services.AddAutoMapper(typeof(ProductOutputMapper));
             services.AddAutoMapper(typeof(CategoryInputMapper));
@@ -57,7 +59,11 @@ namespace CosmeticsApi
             services.AddAutoMapper(typeof(UserOutputMapper));
             services.AddAutoMapper(typeof(CommentInputMapper));
             services.AddAutoMapper(typeof(CommentOutputMapper));
-          
+            services.AddAutoMapper(typeof(SubCategoryInputMapper));
+            services.AddAutoMapper(typeof(SubCategoryOutputMapper));
+            services.AddAutoMapper(typeof(SubCategoryDetailsInputMapper));
+            services.AddAutoMapper(typeof(SubCategoryDetailsOutputMapper));
+
 
 
             services.AddDbContext<AppDBContext>

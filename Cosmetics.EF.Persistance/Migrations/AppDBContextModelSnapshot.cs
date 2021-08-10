@@ -112,9 +112,6 @@ namespace Cosmetics.EF.Persistance.Migrations
                     b.Property<string>("Brand")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("CategoryId")
-                        .HasColumnType("int");
-
                     b.Property<string>("Comment")
                         .HasColumnType("nvarchar(max)");
 
@@ -137,8 +134,6 @@ namespace Cosmetics.EF.Persistance.Migrations
                         .HasColumnType("float");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("CategoryId");
 
                     b.HasIndex("SubCategoryDetailsId");
 
@@ -255,19 +250,11 @@ namespace Cosmetics.EF.Persistance.Migrations
 
             modelBuilder.Entity("Cosmetics.Entities.Product", b =>
                 {
-                    b.HasOne("Cosmetics.Entities.Category", "Category")
-                        .WithMany("Products")
-                        .HasForeignKey("CategoryId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.HasOne("Cosmetics.Entities.Entities.SubCategoryDetails", "SubCategoryDetails")
                         .WithMany("Products")
                         .HasForeignKey("SubCategoryDetailsId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.Navigation("Category");
 
                     b.Navigation("SubCategoryDetails");
                 });
@@ -293,8 +280,6 @@ namespace Cosmetics.EF.Persistance.Migrations
 
             modelBuilder.Entity("Cosmetics.Entities.Category", b =>
                 {
-                    b.Navigation("Products");
-
                     b.Navigation("subCategories");
                 });
 

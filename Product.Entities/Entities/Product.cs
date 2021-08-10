@@ -15,8 +15,6 @@ namespace Cosmetics.Entities
         public string Comment { get; set; }
         public string Country { get; set; }
         public double Weight { get; set; }
-        public int CategoryId { get; set; }
-        public Category Category{ get; set; }
         public List<StoreProduct> StoreProducts { get; set; }
         public List<Comment> UserComments { get; set; }
         public SubCategoryDetails SubCategoryDetails { get; set; }

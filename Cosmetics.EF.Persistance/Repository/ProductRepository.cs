@@ -66,8 +66,10 @@ namespace Cosmetics.EF.Persistance.Repository
             resultProduct.Weight = product.Weight;
             resultProduct.Count = product.Count;
             resultProduct.Country = product.Country;
-            resultProduct.CategoryId = product.CategoryId;
             resultProduct.Comment = product.Comment;
+            resultProduct.Weight = product.Weight;
+            resultProduct.SubCategoryDetailsId = product.SubCategoryDetailsId;
+       
 
         }
     }

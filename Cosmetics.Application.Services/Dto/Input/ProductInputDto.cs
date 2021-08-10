@@ -12,6 +12,6 @@ namespace Cosmetics.Application.Services.Dto.Input
         public int Count { get; set; }
         public string Country { get; set; }
         public double Weight { get; set; }
-        public int CategoryId { get; set; }
+        public int SubCategoryDetailsId { get; set; }
     }
 }

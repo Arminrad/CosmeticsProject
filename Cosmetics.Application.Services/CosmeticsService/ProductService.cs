@@ -59,11 +59,12 @@ namespace Cosmetics.Application.Services.CosmeticsService
                 Id = productUpdateDto.Id,
                 Name = productUpdateDto.Name,
                 Count = productUpdateDto.Count,
-                Country=productUpdateDto.Country,
-                Weight=productUpdateDto.Weight,
-                CategoryId=productUpdateDto.CategoryId,
-                Price=productUpdateDto.Price,
-                Brand=productUpdateDto.Brand,
+                Country = productUpdateDto.Country,
+                Weight = productUpdateDto.Weight,
+                Price = productUpdateDto.Price,
+                Brand = productUpdateDto.Brand,
+                SubCategoryDetailsId = productUpdateDto.SubCategoryDetailsId,
+                
           };
             await repositoryProduct.UpdateAsync(input);
            await unitOfWork.Save();
