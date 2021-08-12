@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Cosmetics.Entities.Entities;
+﻿using System.Collections.Generic;
 
 namespace Cosmetics.Entities
 {
@@ -9,7 +6,10 @@ namespace Cosmetics.Entities
     { 
         public int Id { get; set; }
         public string CategoryName { get; set; }
-        public List<SubCategory> subCategories { get; set; }
+        //public int CategoryId { get; set; }
+        public List<Category> Categories { get; set; }
+        public List<Product> Products { get; set; }
+
 
     }
     

@@ -63,7 +63,6 @@ namespace Cosmetics.Application.Services.CosmeticsService
                 Weight = productUpdateDto.Weight,
                 Price = productUpdateDto.Price,
                 Brand = productUpdateDto.Brand,
-                SubCategoryDetailsId = productUpdateDto.SubCategoryDetailsId,
                 
           };
             await repositoryProduct.UpdateAsync(input);

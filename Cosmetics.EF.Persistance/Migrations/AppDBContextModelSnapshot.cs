@@ -26,10 +26,15 @@ namespace Cosmetics.EF.Persistance.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<int?>("CategoryId")
+                        .HasColumnType("int");
+
                     b.Property<string>("CategoryName")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("CategoryId");
 
                     b.ToTable("Categories");
                 });
@@ -62,46 +67,6 @@ namespace Cosmetics.EF.Persistance.Migrations
                     b.ToTable("Comment");
                 });
 
-            modelBuilder.Entity("Cosmetics.Entities.Entities.SubCategory", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<int>("CategoryId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("SubCategoryName")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("CategoryId");
-
-                    b.ToTable("SubCategory");
-                });
-
-            modelBuilder.Entity("Cosmetics.Entities.Entities.SubCategoryDetails", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("SubCategoryDetailsName")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("SubCategoryId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("SubCategoryId");
-
-                    b.ToTable("SubCategoryDetails");
-                });
-
             modelBuilder.Entity("Cosmetics.Entities.Product", b =>
                 {
                     b.Property<int>("Id")
@@ -111,6 +76,9 @@ namespace Cosmetics.EF.Persistance.Migrations
 
                     b.Property<string>("Brand")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("CategoryId")
+                        .HasColumnType("int");
 
                     b.Property<string>("Comment")
                         .HasColumnType("nvarchar(max)");
@@ -127,15 +95,12 @@ namespace Cosmetics.EF.Persistance.Migrations
                     b.Property<decimal>("Price")
                         .HasColumnType("decimal(18,2)");
 
-                    b.Property<int>("SubCategoryDetailsId")
-                        .HasColumnType("int");
-
                     b.Property<double>("Weight")
                         .HasColumnType("float");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("SubCategoryDetailsId");
+                    b.HasIndex("CategoryId");
 
                     b.ToTable("Products");
                 });
@@ -207,6 +172,13 @@ namespace Cosmetics.EF.Persistance.Migrations
                     b.ToTable("Users");
                 });
 
+            modelBuilder.Entity("Cosmetics.Entities.Category", b =>
+                {
+                    b.HasOne("Cosmetics.Entities.Category", null)
+                        .WithMany("Categories")
+                        .HasForeignKey("CategoryId");
+                });
+
             modelBuilder.Entity("Cosmetics.Entities.Comment", b =>
                 {
                     b.HasOne("Cosmetics.Entities.Product", "Product")
@@ -226,37 +198,15 @@ namespace Cosmetics.EF.Persistance.Migrations
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("Cosmetics.Entities.Entities.SubCategory", b =>
+            modelBuilder.Entity("Cosmetics.Entities.Product", b =>
                 {
                     b.HasOne("Cosmetics.Entities.Category", "Category")
-                        .WithMany("subCategories")
+                        .WithMany("Products")
                         .HasForeignKey("CategoryId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("Category");
-                });
-
-            modelBuilder.Entity("Cosmetics.Entities.Entities.SubCategoryDetails", b =>
-                {
-                    b.HasOne("Cosmetics.Entities.Entities.SubCategory", "SubCategory")
-                        .WithMany("SubCategoryDetails")
-                        .HasForeignKey("SubCategoryId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("SubCategory");
-                });
-
-            modelBuilder.Entity("Cosmetics.Entities.Product", b =>
-                {
-                    b.HasOne("Cosmetics.Entities.Entities.SubCategoryDetails", "SubCategoryDetails")
-                        .WithMany("Products")
-                        .HasForeignKey("SubCategoryDetailsId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("SubCategoryDetails");
                 });
 
             modelBuilder.Entity("Cosmetics.Entities.StoreProduct", b =>
@@ -280,16 +230,8 @@ namespace Cosmetics.EF.Persistance.Migrations
 
             modelBuilder.Entity("Cosmetics.Entities.Category", b =>
                 {
-                    b.Navigation("subCategories");
-                });
+                    b.Navigation("Categories");
 
-            modelBuilder.Entity("Cosmetics.Entities.Entities.SubCategory", b =>
-                {
-                    b.Navigation("SubCategoryDetails");
-                });
-
-            modelBuilder.Entity("Cosmetics.Entities.Entities.SubCategoryDetails", b =>
-                {
                     b.Navigation("Products");
                 });
 

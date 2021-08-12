@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Cosmetics.Entities.Entities;
+﻿using System.Collections.Generic;
 
 namespace Cosmetics.Entities
 {
@@ -17,7 +14,7 @@ namespace Cosmetics.Entities
         public double Weight { get; set; }
         public List<StoreProduct> StoreProducts { get; set; }
         public List<Comment> UserComments { get; set; }
-        public SubCategoryDetails SubCategoryDetails { get; set; }
-        public int SubCategoryDetailsId { get; set; }
+        public int CategoryId { get; set; }
+        public Category Category { get; set; }
     }
 }
